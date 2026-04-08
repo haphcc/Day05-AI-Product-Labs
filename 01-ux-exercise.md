@@ -1,3 +1,18 @@
+Đề tài 2: AI tóm tắt meeting
+-- Lỗi AI có thể mắc phải khi tóm tắt meeting
+1. Gán sai người chịu trách nhiệm (Wrong Accountability Assignment)
+2. Tóm tắt sai ý chính (Missing or Distorted Key Points)
+3. Nhầm lẫn giữa hành động và thảo luận (Action Misclassification)
+4. Tự suy diễn thông tin không tồn tại (Hallucinated Tasks / Owners)
+
+-- Các User Path đang thiếu trong spec
+1. Không có bước kiểm tra trước khi gửi kết quả
+Quy trình hiện tại thiếu bước để người dùng xem lại và chỉnh sửa nội dung trước khi chia sẻ. Điều này khiến mọi sai sót từ AI có thể bị lan truyền ngay lập tức đến các bên liên quan.
+2. Thiếu cơ chế xác nhận khi AI không chắc chắn
+Khi gặp thông tin mơ hồ, hệ thống không có cách để hỏi lại người dùng mà vẫn đưa ra kết luận. Việc không xử lý các trường hợp “không chắc” khiến AI dễ đưa ra dự đoán sai thay vì giữ trạng thái trung lập.
+3. Không có hệ thống nhận diện và liên kết người tham gia
+Spec chưa đề cập cách liên kết giữa tên trong cuộc họp và thông tin thực tế như email hoặc vai trò. Điều này khiến AI khó hiểu được ai đang nói và vai trò của họ trong ngữ cảnh công việc.
+
 # Bài tập UX: phân tích sản phẩm AI thật
 
 **Thời gian:** 40 phút | **Cá nhân** | **Output:** sketch giấy, nộp cuối bài
